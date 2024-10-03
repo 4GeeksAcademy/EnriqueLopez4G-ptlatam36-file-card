@@ -27,6 +27,7 @@ function render(variables = {}) {
   // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
+
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
   // reset the website body with the new html output
@@ -43,7 +44,8 @@ function render(variables = {}) {
     variables.country === null ? "Florida" : variables.country
   }</h3>
 </h3>
-          <ul class="position-right">
+
+          <ul class="${variables.socialMediaPosition}">
             <li><a href="${
               variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
