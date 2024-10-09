@@ -45,8 +45,8 @@ function render(variables = {}) {
   }</h3>
 </h3>
 
-          <ul class="https://twitter.com/${variables.socialMediaPosition}">
-            <li><a href="${
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="https://twitter.com/${
               variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${
